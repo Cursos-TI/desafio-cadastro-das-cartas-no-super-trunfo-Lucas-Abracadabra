@@ -17,16 +17,17 @@ int main() {
     char cidade[50];
     int populacao;
     float area;
-    float pib;
+    int pib;
     int pontosTuristicos;
-
+    
     printf("Super Trunfo - Países!!!\n");
     printf("Primeiro, crie as cartas de suas Cidades Favoritas do Brasil\ncom sua devidas características!\n");
-
+    printf("\n");
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar
     // as entradas do usuário para cada atributo.
     printf("CIDADE 1:\n");
+    printf("\n");
     printf("Qual letra representará o Estado?\n");
     printf("Deve ser uma letra maiúscula de 'A' a 'H'\n (representando um dos oito estados escolhidos): ");
     scanf("%s", estado);
@@ -36,16 +37,52 @@ int main() {
     printf("Qual o nome da cidade?");
     scanf("%s", cidade);
     printf("Qual o número de habitantes da Cidade?");
-    scanf("%i", populacao);
+    scanf("%i", &populacao);
+    printf("Qual o tamanho da área em metros quadrados?");
+    scanf("%f", &area);
     printf("O produto interno bruto(PIB) da Cidade:");
-    scanf("%f", pib);
-
+    scanf("%i", &pib);
+    printf("Qual é quantidade de pontos turísticos?");
+    scanf("%i", &pontosTuristicos);
+    printf("\n");
+    printf("CIDADE 1:\n");
+    printf("O Estado é: %s\n", estado);
+    printf("O Código é: %s\n", codigo);
+    printf("A Cidade é: %s\n", cidade);
+    printf("A População é: %i\n", populacao);
+    printf("Aáera é: %f\n", area);
+    printf("O PIB é: %i\n", pib);
+    printf("Os pontos turísticos são: %i\n", pontosTuristicos);
+    printf("\n");
+    printf("\n");
+    printf("CIDADE 2:\n");
+    printf("\n");
+    printf("Qual letra representará o Estado?\n");
+    printf("Deve ser uma letra maiúscula de 'A' a 'H'\n (representando um dos oito estados escolhidos): ");
+    scanf("%s", estado);
+    printf("Qual o código da carta?\n");
+    printf("Deve ser representado pela letra maiúscula do estado\nseguida de um número de 01 a 04 (ex: A01, B03):");
+    scanf("%s", codigo);
+    printf("Qual o nome da cidade?");
+    scanf("%s", cidade);
+    printf("Qual o número de habitantes da Cidade?");
+    scanf("%i", &populacao);
+    printf("Qual o tamanho da área em metros quadrados?");
+    scanf("%f", &area);
+    printf("O produto interno bruto(PIB) da Cidade:");
+    scanf("%i", &pib);
+    printf("Qual é quantidade de pontos turísticos?");
+    scanf("%i", &pontosTuristicos);
     printf("\n");
     printf("O Estado é: %s\n", estado);
     printf("O Código é: %s\n", codigo);
     printf("A Cidade é: %s\n", cidade);
     printf("A População é: %i\n", populacao);
-    printf("O PIB é: %f\n", pib);
+    printf("Aáera é: %f\n", area);
+    printf("O PIB é: %i\n", pib);
+    printf("Os pontos turísticos são: %i\n", pontosTuristicos);
+
+
 
 
 
